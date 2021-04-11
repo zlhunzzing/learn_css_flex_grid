@@ -10,19 +10,32 @@
   <style>
     .flex-container {
       display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 600px) {
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-item {
+        flex: 1;
+      }
+    }
+    /*.flex-container {*/
+    /*  display: flex;*/
       /*flex-direction: row-reverse;*/
       /*flex-direction: column;*/
       /*flex-wrap: wrap;*/
-      flex-flow: row wrap;
-    }
+      /*flex-flow: row wrap;*/
+    /*}*/
   </style>
 </head>
 
 <body>
   <div class="flex-container">
-    <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-    <div class="flex-item">BBBBBBBBBBBBBBBBSBBB</div>
-    <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    <div class="flex-item">AAAAAAAAAA</div>
+    <div class="flex-item">BBBBBBB</div>
+    <div class="flex-item">CCCCCCCC</div>
   </div>
   Note: 아이템들이 나란히 배치된다
   float과 다르게 알아서 주변요소와 관계를 맞춰준다
