@@ -12,20 +12,33 @@
       display: flex;
     }
     .flex-item {
+    }
+    .flex-item:nth-child(1) {
+      flex-shrink: 0;
       width: 150px;
     }
-    .flex-item:last-child {
-      margin-left: auto;
-      /* auto: 남은 공간 */
+    .flex-item:nth-child(2) {
+      flex-grow: 1;
     }
+    .flex-item:nth-child(3) {
+      flex-shrink: 0;
+      width: 200px;
+    }
+
   </style>
 </head>
 
 <body>
 <div class="flex-container">
-  <div class="flex-item">AA</div>
-  <div class="flex-item">BB</div>
-  <div class="flex-item">CC</div>
+  <div class="flex-item">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestiae.
+  </div>
+  <div class="flex-item">
+    Lorem ipsum doloctetur adipisicing elit. Maiores ex cum tenetur ea commodi inventore nam doloribus dolores sit saepe.
+  </div>
+  <div class="flex-item">
+    Lorem ipsum dolor sit, amet consectetur adipisicing.
+  </div>
 </div>
 </body>
 
