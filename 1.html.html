@@ -8,53 +8,35 @@
   <title>CSS Flex</title>
   <link rel="stylesheet" href="default.css">
   <style>
-    .page {
+    .flex-container {
       display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      height: 100vh;
+      align-items: center;
     }
-    .content {
-      /* windows: overflow: auto; */
-      flex: 1 auto;
-      padding: 1.5rem;
+
+    .flex-item {}
+
+    .flex-item:nth-child(1) {}
+
+    .flex-item:nth-child(2) {
+      align-items: stretch;
     }
-    /*.flex-container {*/
-    /*  display: flex;*/
-    /*}*/
-    /*.flex-item {*/
-    /*}*/
-    /*.flex-item:nth-child(1) {*/
-    /*  flex-shrink: 0;*/
-    /*  width: 150px;*/
-    /*}*/
-    /*.flex-item:nth-child(2) {*/
-    /*  flex-grow: 1;*/
-    /*}*/
-    /*.flex-item:nth-child(3) {*/
-    /*  flex-shrink: 0;*/
-    /*  width: 200px;*/
-    /*}*/
+
+    .flex-item:nth-child(3) {}
   </style>
 </head>
 
 <body>
-<!--<div class="flex-container">-->
-<!--  <div class="flex-item">-->
-<!--    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam pariatur quas magnam voluptates dolore qui laborum explicabo voluptate non eaque at ipsam minima optio autem, delectus blanditiis praesentium deserunt omnis? Quidem, hic. Atque provident sed qui, fugit corporis culpa maiores nesciunt laudantium voluptates quia deleniti, expedita recusandae.-->
-<!--  </div>-->
-<!--  <div class="flex-item">-->
-<!--    Lorem ipsum doloctetur adipisicing elit. Maiores ex cum tenetur ea commodi inventore nam doloribus dolores sit saepe.-->
-<!--  </div>-->
-<!--  <div class="flex-item">-->
-<!--    Lorem ipsum dolor sit, amet consectetur adipisicing.-->
-<!--  </div>-->
-<!--</div>-->
-  <div class="page">
-    <header class="header flex-item">header</header>
-    <section class="content">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam pariatur quas magnam voluptates dolore qui laborum explicabo voluptate non eaque at ipsam minima optio autem, delectus blanditiis praesentium deserunt omnis? Quidem, hic. Atque provident sed qui, fugit corporis culpa maiores nesciunt laudantium voluptates quia deleniti, expedita recusandae.
-    </section>
-    <footer class="footer flex-item">footer</footer>
+  <div class="flex-container">
+    <div class="flex-item">
+      AAAAAAAAAAA
+    </div>
+    <div class="flex-item">
+      BB
+    </div>
+    <div class="flex-item">
+      CCCCCC
+    </div>
   </div>
 </body>
 
