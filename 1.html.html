@@ -10,34 +10,30 @@
   <style>
     .flex-container {
       display: flex;
-      height: 100vh;
-      align-items: center;
     }
-
-    .flex-item {}
-
-    .flex-item:nth-child(1) {}
-
-    .flex-item:nth-child(2) {
-      align-items: stretch;
+    .flex-item {
     }
-
-    .flex-item:nth-child(3) {}
+    .flex-item:nth-child(1) { order: 3; } {
+    }
+    .flex-item:nth-child(2) { order: 1; } {
+    }
+    .flex-item:nth-child(3) { order: 2; } {
+    }
   </style>
 </head>
 
 <body>
-  <div class="flex-container">
-    <div class="flex-item">
-      AAAAAAAAAAA
-    </div>
-    <div class="flex-item">
-      BB
-    </div>
-    <div class="flex-item">
-      CCCCCC
-    </div>
+<div class="flex-container">
+  <div class="flex-item">
+    AAAAAAAAAAA
   </div>
+  <div class="flex-item">
+    BB
+  </div>
+  <div class="flex-item">
+    CCCCCC
+  </div>
+</div>
 </body>
 
 </html>
