@@ -7,36 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Flex</title>
   <link rel="stylesheet" href="default.css">
-  <style>
-    .flex-container {
-      display: flex;
-    }
-    .flex-item {
-    }
-    .flex-item:nth-child(1) {
-      ransform: scale(1.5);
-      z-index: 1;
-    }
-    .flex-item:nth-child(2) {
-      transform: scale(2);
-    }
-    .flex-item:nth-child(3) {
-      ransform: scale(2);
-    }
-  </style>
+  <link rel="stylesheet" href="ui.css">
 </head>
 
 <body>
 <div class="flex-container">
-  <div class="flex-item">
-    AAAAAAAAAAA
-  </div>
-  <div class="flex-item">
-    BB
-  </div>
-  <div class="flex-item">
-    CCCCCC
-  </div>
+  <ui class="menu">
+    <li class="menu-item">
+      <a href="#" class="menu-link">Home</a>
+    </li>
+    <li class="menu-item">
+      <a href="#" class="menu-link">About</a>
+    </li>
+    <li class="menu-item">
+      <a href="#" class="menu-link">Product</a>
+    </li>
+    <li class="menu-item">
+      <a href="#" class="menu-link">Contact</a>
+    </li>
+  </ui>
 </div>
 </body>
 
