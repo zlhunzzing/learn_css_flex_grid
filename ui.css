@@ -110,3 +110,13 @@
 	border-radius: 1em;
 	background: white;
 }
+
+/* card list */
+-card-item {
+	margin-bottom: 2rem;
+}
+.card-image {
+}
+.card-image img {
+	display: none;
+}
