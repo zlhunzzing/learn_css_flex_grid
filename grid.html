@@ -10,11 +10,13 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            /*gap: 20px*/
+            row-gap: 20px;
         }
-        .grid-item {
 
-        }
+        .grid-item {}
     </style>
     <script>
         /*
@@ -27,17 +29,19 @@
         */
     </script>
 </head>
+
 <body>
     <div class="grid-container">
         <div class="grid-item">A</div>
         <div class="grid-item">B</div>
         <div class="grid-item">C</div>
-<!--        <div class="grid-item">D</div>-->
-<!--        <div class="grid-item">E</div>-->
-<!--        <div class="grid-item">F</div>-->
-<!--        <div class="grid-item">G</div>-->
-<!--        <div class="grid-item">H</div>-->
-<!--        <div class="grid-item">I</div>-->
+                <div class="grid-item">D</div>
+                <div class="grid-item">E</div>
+                <div class="grid-item">F</div>
+                <div class="grid-item">G</div>
+                <div class="grid-item">H</div>
+                <div class="grid-item">I</div>
     </div>
 </body>
+
 </html>
