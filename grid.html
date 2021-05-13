@@ -10,19 +10,13 @@
     <style>
         .grid-container {
             display: grid;
-            gap: 1rem;
-            grid-template-columns: 1fr 3fr 1fr;
-            grid-template-areas:
-                '..... header header'
-                'sidebar-a main sidebar-b'
-                'footer footer footer';
-
+            grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+            grid-template-rows: repeat(5, minmax(50px, auto));
+            grid-auto-flow: dense;
         }
-        .header { grid-area: header; }
-        .sidebar-a { grid-area: sidebar-a; }
-        .sidebar-b { grid-area: sidebar-b; }
-        .main { grid-area: main; }
-        .footer { grid-area: footer; }
+        .grid-item:nth-child(2) { grid-column: auto / span 3; }
+        .grid-item:nth-child(5) { grid-column: auto / span 3; }
+        .grid-item:nth-child(7) { grid-column: auto / span 2; }
     </style>
     <script>
         /*
@@ -38,24 +32,15 @@
 
 <body>
     <div class="grid-container">
-        <div class="header grid-item">Header</div>
-        <div class="sidebar-a grid-item">Sidebar A</div>
-        <div class="sidebar-b grid-item">Sidebar B</div>
-        <div class="main grid-item">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Atque exercitationem odio, modi laboriosam a perspiciatis
-            est delectus quisquam obcaecati vel eos natus ipsam quasi
-            reprehenderit nihil eligendi quam aliquid! Totam vitae
-            quis, obcaecati quos, ut aut eveniet architecto sed harum
-            ea deleniti itaque saepe unde nulla?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Atque exercitationem odio, modi laboriosam a perspiciatis
-            est delectus quisquam obcaecati vel eos natus ipsam quasi
-            reprehenderit nihil eligendi quam aliquid! Totam vitae
-            quis, obcaecati quos, ut aut eveniet architecto sed harum
-            ea deleniti itaque saepe unde nulla?
-        </div>
-        <div class="footer grid-item">Footer</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
     </div>
 </body>
 
