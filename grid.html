@@ -10,13 +10,13 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(25%, auto));
-            grid-template-rows: repeat(5, minmax(50px, auto));
-            grid-auto-flow: dense;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(300px, auto));
+
+            place-items: start start;
+            /*justify-items: start;*/
+            /*align-items: start;*/
         }
-        .grid-item:nth-child(2) { grid-column: auto / span 3; }
-        .grid-item:nth-child(5) { grid-column: auto / span 3; }
-        .grid-item:nth-child(7) { grid-column: auto / span 2; }
     </style>
     <script>
         /*
