@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="default2.css">
     <style>
         .grid-container {
-            height: 20rem;
             display: grid;
-            /*grid-template-columns: repeat(5, 1fr);*/
-
-            place-content: end end;
-            /*align-content: end;*/
-            /*justify-content: end;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .grid-item2 {
+            place-self: end end;
+            /*align-self: end;*/
+            /*justify-self: end;*/
         }
     </style>
     <script>
@@ -32,11 +33,11 @@
 
 <body>
     <div class="grid-container">
-        <div style="grid-column: 1 / auto" class="grid-item">A</div>
-        <div style="grid-column: 2 / auto" class="grid-item">B</div>
-        <div style="grid-column: 3 / auto" class="grid-item">C</div>
-        <div style="grid-column: 4 / auto" class="grid-item">D</div>
-        <div style="grid-column: 5 / auto" class="grid-item">E</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item grid-item2">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
         <div class="grid-item">F</div>
         <div class="grid-item">G</div>
         <div class="grid-item">H</div>
