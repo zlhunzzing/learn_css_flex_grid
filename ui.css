@@ -115,8 +115,13 @@
 }
 
 /* card list */
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+	/*column-gap: 2%;*/
+}
 .card-item {
-	display: flex;
+	/*display: flex;*/
 	flex-direction: column;
 	margin-bottom: 2rem;
 }
