@@ -53,24 +53,46 @@
 		@media (orientation: portrait) {
 			body {
 				background-position: calc(50% + 27vw) 100%;
-				background-size: calc(450px + 40vw) auto;
+				background-size: calc(400px + 40vw) auto;
 			}
 			.page {
-				grid-template-rows: repeat(4, 1fr);
+				grid-template-columns: repeat(4, 1fr);
 			}
 			.logo {
 				width: 70px;
 				height: 35px;
 				border-width: 15px;
 			}
-			/* .message {
+			.message {
 				font-size: 1.5rem;
-			} */
+			}
 			.footer {
 				grid-row: 4;
 				font-size: 0.8rem;
 			}
 		}
+
+		/*@media (orientation: portrait) {*/
+		/*	body {*/
+		/*		background-position: calc(50% + 27vw) 100%;*/
+		/*		background-size: calc(450px + 40vw) auto;*/
+		/*	}*/
+		/*	.page {*/
+		/*		grid-template-rows: repeat(4, 1fr);*/
+		/*	}*/
+		/*	.logo {*/
+		/*		width: 70px;*/
+		/*		height: 35px;*/
+		/*		border-width: 15px;*/
+		/*	}*/
+		/*	!* .message {*/
+		/*		font-size: 1.5rem;*/
+		/*	} *!*/
+		/*	.footer {*/
+		/*		grid-row: 4;*/
+		/*		font-size: 0.8rem;*/
+		/*	}*/
+		/*}*/
 	</style>
 </head>
 <body>
