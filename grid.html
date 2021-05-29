@@ -10,164 +10,21 @@
     <link rel="stylesheet" href="ui.css">
     <link rel="stylesheet" href="ui-page2.css">
     <style>
-        body {
+        .grid-container {
             display: -ms-grid;
+            -ms-grid-columns: (1fr)[3];
         }
+        .grid-item:nth-child(1) { -ms-grid-column: 1; }
+        .grid-item:nth-child(2) { -ms-grid-column: 2; }
+        .grid-item:nth-child(3) { -ms-grid-column: 3; }
     </style>
 </head>
 
 <body>
-<div class="page">
-    <!-- hearder -->
-    <header class="header">
-        <h1 class="website-title">홈페이지</h1>
-        <form class="search-form">
-            <input type="search">
-            <input type="submit" value="찾기">
-        </form>
-        <!--            <div id="modal-switch">⚑</div>-->
-    </header>
-
-    <!-- menu -->
-    <ui class="menu">
-        <li class="menu-item">
-            <a href="#" class="menu-link">Home</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-link">About</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-link">Product</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-link">Contact</a>
-        </li>
-    </ui>
-
-    <!--        <div class="content-container">-->
-    <!-- primary -->
-    <section class="primary">
-        <div class="card-list-container">
-            <ul class="card-list">
-                <li class="card-item">
-                    <figure class="card-image"
-                            style="background-image: url(./char.png)">
-                        <img src="./char.png" alt="캐릭">
-                    </figure>
-                    <div class="card-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.
-                    </div>
-                </li>
-                <li class="card-item">
-                    <figure class="card-image"
-                            style="background-image: url(./char.png)">
-                        <img src="./char.png" alt="캐릭">
-                    </figure>
-                    <div class="card-desc">
-                        Atque exercitationem odio.
-                    </div>
-                </li>
-                <li class="card-item">
-                    <figure class="card-image"
-                            style="background-image: url(./char.png)">
-                        <img src="./char.png" alt="캐릭">
-                    </figure>
-                    <div class="card-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque exercitationem odio.
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- secondary-a -->
-    <aside class="secondary secondary-a">
-        <ul class="info-list">
-            <li class="info-list-item">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit numquam aspernatur excepturi, eos soluta praesentium maiores commodi minus accusantium?
-            </li>
-            <li class="info-list-item">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam tempora nisi unde corrupti dicta.
-            </li>
-            <li class="info-list-item">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequatur alias, ducimus ea magnam nostrum repudiandae repellendus deleniti veniam? Assumenda expedita ad eum nihil!
-            </li>
-        </ul>
-        <ul class="user-list friend-list">
-            <li class="user-item friend-item">
-                <figure class="user-photo"></figure>
-                <p class="user-name">
-                    카드값줘체리 카드값줘체리 카드값줘체리 카드값줘체리 카드값줘체리 카드값줘체리 카드값줘체리 카드값줘체리
-                </p>
-            </li>
-            <li class="user-item friend-item">
-                <figure class="user-photo"></figure>
-                <p class="user-name">
-                    이웃집또털어
-                </p>
-            </li>
-            <li class="user-item friend-item">
-                <figure class="user-photo"></figure>
-                <p class="user-name">
-                    세일러묵
-                </p>
-            </li>
-        </ul>
-    </aside>
-
-    <!-- secondary-b -->
-    <aside class="secondary secondary-b">
-        <ul class="user-list message-list">
-            <li class="user-item message-item">
-                <figure class="user-photo"></figure>
-                <p class="message-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit numquam aspernatur excepturi, eos soluta praesentium maiores commodi minus accusantium?
-                </p>
-            </li>
-            <li class="user-item message-item">
-                <figure class="user-photo"></figure>
-                <p class="message-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit numquam aspernatur excepturi, eos soluta praesentium maiores commodi minus accusantium?
-                </p>
-            </li>
-            <li class="user-item message-item">
-                <figure class="user-photo"></figure>
-                <p class="message-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit numquam aspernatur excepturi, eos soluta praesentium maiores commodi minus accusantium?
-                </p>
-            </li>
-        </ul>
-    </aside>
-</div>
-
-<!-- footer -->
-<footer class="footer">
-    Atque exercitationem odio.
-</footer>
-<!--    </div>-->
-
-<input type="checkbox" id="modal-switch">
-<label for="modal-switch">
-    <span>modal 열고 닫기</span>
-</label>
-
-<div class="modal">
-    <div class="dialog">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Atque exercitationem odio, modi laboriosam a perspiciatis
-        est delectus quisquam obcaecati vel eos natus ipsam quasi
-        reprehenderit nihil eligendi quam aliquid! Totam vitae
-        quis, obcaecati quos, ut aut eveniet architecto sed harum
-        ea deleniti itaque saepe unde nulla?
-    </div>
+<div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
 </div>
 </body>
 <script>
